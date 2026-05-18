@@ -35,7 +35,7 @@ html{scroll-behavior:smooth}
 body{
   background:var(--black);
   color:var(--cream);
-  font-family:'Josefin Sans',sans-serif;
+  font-family:'Montserrat',sans-serif;
   font-weight:200;
   letter-spacing:0.08em;
   overflow-x:hidden;
@@ -56,7 +56,7 @@ body{
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.8rem 4rem;display:flex;align-items:center;justify-content:space-between;transition:all .4s ease}
 nav.scrolled{padding:1rem 4rem;background:color-mix(in srgb,var(--black) 90%,transparent);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid color-mix(in srgb,var(--white) 8%,transparent)}
-.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;letter-spacing:.35em;color:var(--white);text-decoration:none;text-transform:uppercase}
+.nav-logo{font-family:'Montserrat',sans-serif;font-size:1.1rem;font-weight:300;letter-spacing:.35em;color:var(--white);text-decoration:none;text-transform:uppercase}
 .nav-links{display:flex;gap:3rem;list-style:none}
 .nav-links a{font-size:.65rem;letter-spacing:.22em;color:var(--silver);text-decoration:none;text-transform:uppercase;transition:color .3s;position:relative}
 .nav-links a::after{content:'';position:absolute;bottom:-3px;left:0;right:0;height:1px;background:var(--white);transform:scaleX(0);transform-origin:right;transition:transform .35s ease}
@@ -73,17 +73,17 @@ nav.scrolled{padding:1rem 4rem;background:color-mix(in srgb,var(--black) 90%,tra
 /* HERO BRAND - Giant animated name */
 .hero-brand{position:relative;z-index:2;text-align:center;margin-bottom:2rem;padding-top:5rem}
 .hero-brand-line{display:flex;justify-content:center;gap:0;perspective:600px}
-.hero-brand-char{display:inline-block;font-family:'Cormorant Garamond',serif;font-size:clamp(5rem,14vw,13rem);font-weight:300;color:var(--white);line-height:1;letter-spacing:.04em;text-transform:uppercase}
+.hero-brand-char{display:inline-block;font-family:'Montserrat',sans-serif;font-size:clamp(5rem,14vw,13rem);font-weight:300;color:var(--white);line-height:1;letter-spacing:.04em;text-transform:uppercase}
 .hero-brand-char-outline{color:transparent;-webkit-text-stroke:1.5px var(--white);text-stroke:1.5px var(--white)}
 .hero-brand-divider{width:120px;height:1px;background:var(--white);margin:1rem auto;transform-origin:center}
 
 .hero-eyebrow{font-size:.6rem;letter-spacing:.4em;color:var(--silver);text-transform:uppercase;margin-bottom:1rem;text-align:center;position:relative;z-index:2}
-.hero-tagline{font-family:'Cormorant Garamond',serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:300;color:var(--cream);text-align:center;position:relative;z-index:2;margin-bottom:2rem;letter-spacing:.05em}
+.hero-tagline{font-family:'Montserrat',sans-serif;font-size:clamp(1.5rem,3vw,2.2rem);font-weight:300;color:var(--cream);text-align:center;position:relative;z-index:2;margin-bottom:2rem;letter-spacing:.05em}
 .hero-tagline em{font-style:italic;color:var(--silver)}
 .hero-bottom{display:flex;align-items:flex-end;justify-content:space-between;margin-top:auto;width:100%;position:relative;z-index:2;padding-top:2rem}
 .hero-sub{font-size:.7rem;letter-spacing:.2em;color:var(--warm-gray);max-width:280px;line-height:2;text-transform:uppercase}
 .hero-cta{display:flex;flex-direction:column;align-items:flex-end;gap:.75rem}
-.btn-primary{display:inline-block;padding:1rem 3rem;border:1px solid var(--white);color:var(--white);font-family:'Josefin Sans',sans-serif;font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;background:transparent;cursor:pointer;transition:all .4s ease;position:relative;overflow:hidden}
+.btn-primary{display:inline-block;padding:1rem 3rem;border:1px solid var(--white);color:var(--white);font-family:'Montserrat',sans-serif;font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;text-decoration:none;background:transparent;cursor:pointer;transition:all .4s ease;position:relative;overflow:hidden}
 .btn-primary::before{content:'';position:absolute;inset:0;background:var(--white);transform:translateX(-101%);transition:transform .4s ease}
 .btn-primary:hover{color:var(--black)}
 .btn-primary:hover::before{transform:translateX(0)}
@@ -102,7 +102,7 @@ nav.scrolled{padding:1rem 4rem;background:color-mix(in srgb,var(--black) 90%,tra
 /* SECTIONS */
 section{padding:8rem 4rem}
 .section-label{font-size:.55rem;letter-spacing:.45em;color:var(--white);text-transform:uppercase;margin-bottom:1rem}
-.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:300;line-height:1.1;color:var(--white)}
+.section-title{font-family:'Montserrat',sans-serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:300;line-height:1.1;color:var(--white)}
 
 /* COLLECTION */
 .collection{background:var(--near-black)}
@@ -119,12 +119,12 @@ section{padding:8rem 4rem}
 .product-overlay span:hover{background:var(--white);color:var(--black)}
 .product-info{padding:1.25rem 0 0}
 .product-name{font-size:.7rem;letter-spacing:.2em;color:var(--silver);text-transform:uppercase;margin-bottom:.35rem}
-.product-price{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;color:var(--white);letter-spacing:.05em}
+.product-price{font-family:'Montserrat',sans-serif;font-size:1.1rem;font-weight:300;color:var(--white);letter-spacing:.05em}
 .product-tag{display:inline-block;font-size:.5rem;letter-spacing:.3em;color:var(--white);border:1px solid var(--mid);padding:.2rem .6rem;text-transform:uppercase;margin-bottom:.5rem}
 
 /* MODELS SHOWCASE */
 .models{background:var(--black);position:relative;overflow:hidden}
-.models::before{content:'LIVING LIFE';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Cormorant Garamond',serif;font-size:clamp(6rem,18vw,14rem);font-weight:300;color:var(--mid);white-space:nowrap;pointer-events:none;letter-spacing:.1em}
+.models::before{content:'LIVING LIFE';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Montserrat',sans-serif;font-size:clamp(6rem,18vw,14rem);font-weight:300;color:var(--mid);white-space:nowrap;pointer-events:none;letter-spacing:.1em}
 .models-header{text-align:center;margin-bottom:5rem}
 .models-header .section-title{margin-bottom:1rem}
 .models-subtitle{font-size:.7rem;letter-spacing:.2em;color:var(--warm-gray);text-transform:uppercase;max-width:500px;margin:0 auto;line-height:2}
@@ -141,26 +141,26 @@ section{padding:8rem 4rem}
 .model-card-overlay span:hover{background:var(--white);color:var(--black)}
 .model-card-info{padding:1.5rem}
 .model-card-category{font-size:.5rem;letter-spacing:.35em;color:var(--warm-gray);text-transform:uppercase;margin-bottom:.5rem}
-.model-card-name{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;color:var(--white);margin-bottom:.3rem}
+.model-card-name{font-family:'Montserrat',sans-serif;font-size:1.3rem;font-weight:300;color:var(--white);margin-bottom:.3rem}
 .model-card-desc{font-size:.6rem;letter-spacing:.12em;color:var(--warm-gray);line-height:1.8;margin-bottom:.8rem}
-.model-card-price{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;color:var(--white);letter-spacing:.05em}
+.model-card-price{font-family:'Montserrat',sans-serif;font-size:1.1rem;font-weight:300;color:var(--white);letter-spacing:.05em}
 
 /* PHILOSOPHY */
 .philosophy{display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;padding:0}
 .philosophy-text{padding:8rem 5rem;display:flex;flex-direction:column;justify-content:center;background:var(--black)}
-.philosophy-text blockquote{font-family:'Cormorant Garamond',serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;font-style:italic;line-height:1.4;color:var(--white);margin:2rem 0;padding-left:2rem;border-left:1px solid var(--white)}
+.philosophy-text blockquote{font-family:'Montserrat',sans-serif;font-size:clamp(1.8rem,3.5vw,2.8rem);font-weight:300;font-style:italic;line-height:1.4;color:var(--white);margin:2rem 0;padding-left:2rem;border-left:1px solid var(--white)}
 .philosophy-text p{font-size:.7rem;letter-spacing:.15em;color:var(--warm-gray);line-height:2.2;max-width:380px;text-transform:uppercase}
 .philosophy-visual{background:var(--dark);position:relative;overflow:hidden;min-height:500px}
 .philosophy-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(100%) contrast(1.1)}
 .philosophy-overlay{position:absolute;inset:0;background:linear-gradient(135deg,color-mix(in srgb,var(--black) 40%,transparent) 0%,color-mix(in srgb,var(--black) 70%,transparent) 100%);z-index:1}
 .philosophy-visual::before{content:'';position:absolute;inset:0;z-index:2;background:radial-gradient(circle at 30% 60%,color-mix(in srgb,var(--white) 4%,transparent) 0%,transparent 50%),radial-gradient(circle at 80% 20%,color-mix(in srgb,var(--white) 3%,transparent) 0%,transparent 40%)}
-.big-letters{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Cormorant Garamond',serif;font-size:clamp(5rem,15vw,11rem);font-weight:300;font-style:italic;color:rgba(255,255,255,0.15);white-space:nowrap;letter-spacing:-.02em;user-select:none;line-height:1;z-index:3}
+.big-letters{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Montserrat',sans-serif;font-size:clamp(5rem,15vw,11rem);font-weight:300;font-style:italic;color:rgba(255,255,255,0.15);white-space:nowrap;letter-spacing:-.02em;user-select:none;line-height:1;z-index:3}
 .philosophy-badge{position:absolute;bottom:3rem;right:3rem;width:120px;height:120px;border-radius:50%;border:1px solid rgba(255,255,255,0.3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.25rem;animation:spin 20s linear infinite;z-index:3}
 .philosophy-badge span{font-size:.45rem;letter-spacing:.35em;color:var(--white);text-transform:uppercase}
-.philosophy-badge strong{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;color:var(--white);letter-spacing:.05em}
+.philosophy-badge strong{font-family:'Montserrat',sans-serif;font-size:1.4rem;font-weight:300;color:var(--white);letter-spacing:.05em}
 .philosophy-stats{display:flex;gap:3rem;margin-top:3rem}
 .philosophy-stat{display:flex;flex-direction:column;gap:.3rem}
-.stat-number{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--white)}
+.stat-number{font-family:'Montserrat',sans-serif;font-size:2rem;font-weight:300;color:var(--white)}
 .stat-label{font-size:.5rem;letter-spacing:.3em;color:var(--warm-gray);text-transform:uppercase}
 .philosophy-ring{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);border-radius:50%;border:1px solid rgba(255,255,255,0.12);z-index:3}
 .philosophy-ring-1{width:200px;height:200px}
@@ -182,14 +182,14 @@ section{padding:8rem 4rem}
 .bento-item:hover img{filter:grayscale(0%);transform:scale(1.06)}
 .bento-overlay{position:absolute;inset:0;background:linear-gradient(to top,color-mix(in srgb,var(--black) 80%,transparent) 0%,transparent 60%);display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem;text-align:left;opacity:0;transition:opacity .4s ease}
 .bento-item:hover .bento-overlay{opacity:1}
-.bento-num{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--white);line-height:1;margin-bottom:.3rem}
+.bento-num{font-family:'Montserrat',sans-serif;font-size:2rem;font-weight:300;color:var(--white);line-height:1;margin-bottom:.3rem}
 .bento-label{font-size:.65rem;letter-spacing:.35em;color:var(--white);text-transform:uppercase;margin-bottom:.3rem}
 .bento-desc{font-size:.5rem;letter-spacing:.15em;color:var(--warm-gray);text-transform:uppercase}
 .lookbook-cta{margin-top:4rem}
 
 /* NEWSLETTER */
 .newsletter{padding:8rem 4rem;background:var(--black);display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:6rem;border-top:1px solid var(--mid)}
-.newsletter h2{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;color:var(--white);line-height:1.2}
+.newsletter h2{font-family:'Montserrat',sans-serif;font-size:clamp(2rem,4vw,3.2rem);font-weight:300;color:var(--white);line-height:1.2}
 .newsletter h2 em{font-style:italic;color:var(--silver)}
 .newsletter-perks{display:flex;flex-direction:column;gap:.8rem;margin-top:2rem}
 .newsletter-perk{display:flex;align-items:center;gap:1rem}
@@ -198,9 +198,9 @@ section{padding:8rem 4rem}
 .newsletter-form{display:flex;flex-direction:column;gap:1rem}
 .form-group{display:flex;border:1px solid var(--mid);overflow:hidden;transition:border-color .3s}
 .form-group:focus-within{border-color:var(--white);box-shadow:0 0 20px color-mix(in srgb,var(--white) 5%,transparent)}
-.form-group input{flex:1;padding:1rem 1.5rem;background:transparent;border:none;outline:none;font-family:'Josefin Sans',sans-serif;font-size:.7rem;letter-spacing:.15em;color:var(--cream);font-weight:200}
+.form-group input{flex:1;padding:1rem 1.5rem;background:transparent;border:none;outline:none;font-family:'Montserrat',sans-serif;font-size:.7rem;letter-spacing:.15em;color:var(--cream);font-weight:200}
 .form-group input::placeholder{color:var(--warm-gray);text-transform:uppercase;letter-spacing:.2em}
-.form-group button{padding:1rem 2rem;background:var(--white);border:none;color:var(--black);font-family:'Josefin Sans',sans-serif;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;cursor:pointer;font-weight:400;transition:all .3s}
+.form-group button{padding:1rem 2rem;background:var(--white);border:none;color:var(--black);font-family:'Montserrat',sans-serif;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;cursor:pointer;font-weight:400;transition:all .3s}
 .form-group button:hover{background:var(--silver)}
 .form-note{font-size:.55rem;letter-spacing:.2em;color:var(--warm-gray);text-transform:uppercase}
 
@@ -208,7 +208,7 @@ section{padding:8rem 4rem}
 footer{border-top:1px solid var(--mid);padding:0;background:var(--near-black);display:block}
 .footer-top{display:flex;justify-content:space-between;padding:4rem;gap:4rem}
 .footer-brand{max-width:300px}
-.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.5rem;font-weight:300;letter-spacing:.3em;color:var(--white);margin-bottom:1rem}
+.footer-logo{font-family:'Montserrat',sans-serif;font-size:1.5rem;font-weight:300;letter-spacing:.3em;color:var(--white);margin-bottom:1rem}
 .footer-logo span{color:var(--silver)}
 .footer-tagline{font-size:.6rem;letter-spacing:.15em;color:var(--warm-gray);line-height:2;text-transform:uppercase}
 .footer-columns{display:flex;gap:4rem}
