@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { useMemo } from 'react'
+import HeroVideo from './HeroVideo'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -23,7 +24,7 @@ export default function Hero() {
 
   return (
     <section className="hero">
-      <div className="hero-bg" />
+      <HeroVideo />
 
       <div className="hero-particles">
         {particles.map(p => (
