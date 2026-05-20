@@ -19,7 +19,7 @@ const cardVariants = {
   })
 }
 
-function ModelCard({ model, index, inView }) {
+function ModelCard({ model, index, inView, onOpenDetails }) {
   const cardRef = useRef(null)
 
   const handleMouseMove = (e) => {
@@ -49,7 +49,8 @@ function ModelCard({ model, index, inView }) {
       custom={index}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      style={{ transition: 'transform 0.3s ease, border-color 0.5s ease' }}
+      onClick={() => onOpenDetails && onOpenDetails(model)}
+      style={{ cursor: 'pointer', transition: 'transform 0.3s ease, border-color 0.5s ease' }}
     >
       <div className="model-card-img">
         <img src={model.img} alt={model.name} loading="lazy" />
@@ -67,7 +68,7 @@ function ModelCard({ model, index, inView }) {
   )
 }
 
-export default function ModelsShowcase() {
+export default function ModelsShowcase({ onOpenDetails }) {
   const [ref, inView] = useInView({ threshold: 0.05, triggerOnce: true })
 
   return (
@@ -101,7 +102,7 @@ export default function ModelsShowcase() {
 
       <div className="models-grid">
         {models.map((model, i) => (
-          <ModelCard key={i} model={model} index={i} inView={inView} />
+          <ModelCard key={i} model={model} index={i} inView={inView} onOpenDetails={onOpenDetails} />
         ))}
       </div>
     </section>

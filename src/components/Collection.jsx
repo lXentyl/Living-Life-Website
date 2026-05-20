@@ -16,7 +16,7 @@ const cardVariants = {
   })
 }
 
-export default function Collection() {
+export default function Collection({ onOpenDetails }) {
   const [ref, inView] = useInView({ threshold: 0.1, triggerOnce: true })
 
   return (
@@ -61,6 +61,8 @@ export default function Collection() {
             initial="hidden"
             animate={inView ? 'visible' : 'hidden'}
             custom={i}
+            onClick={() => onOpenDetails && onOpenDetails(product)}
+            style={{ cursor: 'pointer' }}
           >
             <div className="product-img">
               <img src={product.img} alt={product.name} loading="lazy" />
