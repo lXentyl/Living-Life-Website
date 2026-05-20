@@ -23,6 +23,8 @@ function ModelCard({ model, index, inView }) {
   const cardRef = useRef(null)
 
   const handleMouseMove = (e) => {
+    if (window.matchMedia('(pointer: coarse)').matches || window.innerWidth < 768) return
+
     const card = cardRef.current
     if (!card) return
     const rect = card.getBoundingClientRect()

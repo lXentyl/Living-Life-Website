@@ -50,7 +50,8 @@ export default function Newsletter() {
         transition={{ delay: 0.3, duration: 0.8 }}
       >
         <div className="form-group">
-          <input type="email" placeholder="Tu correo electrónico" />
+          <label htmlFor="newsletter-email" className="sr-only">Correo electrónico</label>
+          <input id="newsletter-email" type="email" placeholder="Tu correo electrónico" />
           <button type="button">Unirme</button>
         </div>
         <p className="form-note">Sin spam. Solo lo que importa.</p>

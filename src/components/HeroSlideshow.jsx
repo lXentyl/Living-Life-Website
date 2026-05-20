@@ -4,14 +4,17 @@ import { motion, AnimatePresence } from 'framer-motion'
 const slides = [
   {
     src: '/images/hero-1.png',
+    alt: 'Modelo vistiendo sudadera urbana oversize de la nueva colección Living Life',
     kenBurns: { scale: [1, 1.15], x: ['0%', '3%'], y: ['0%', '-2%'] },
   },
   {
     src: '/images/hero-2.png',
+    alt: 'Estilo de vida urbano con prendas minimalistas de alta calidad de Living Life',
     kenBurns: { scale: [1.08, 1], x: ['2%', '-1%'], y: ['-1%', '2%'] },
   },
   {
     src: '/images/hero-3.png',
+    alt: 'Diseño de ropa urbana premium de la colección 2025 de Living Life',
     kenBurns: { scale: [1, 1.12], x: ['-2%', '2%'], y: ['1%', '-1%'] },
   },
 ]
@@ -19,7 +22,7 @@ const slides = [
 const SLIDE_DURATION = 5000 // ms each slide is visible
 const TRANSITION_DURATION = 1.8 // seconds for crossfade
 
-export default function HeroVideo() {
+export default function HeroSlideshow() {
   const [current, setCurrent] = useState(0)
   const [isLoaded, setIsLoaded] = useState(false)
   const loadedCount = useRef(0)
@@ -71,7 +74,7 @@ export default function HeroVideo() {
         >
           <motion.img
             src={slides[current].src}
-            alt=""
+            alt={slides[current].alt}
             draggable={false}
             initial={{
               scale: slides[current].kenBurns.scale[0],

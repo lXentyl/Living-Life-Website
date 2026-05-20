@@ -45,11 +45,11 @@ export default function Navbar() {
   }
 
   const navLinks = [
-    { href: '#coleccion', label: 'Colección' },
-    { href: '#modelos', label: 'Modelos' },
-    { href: '#filosofia', label: 'Filosofía' },
-    { href: '#lookbook', label: 'Lookbook' },
-    { href: '#contacto', label: 'Contacto' },
+    { href: '#coleccion', label: 'Colección', sub: 'Temporada 2025' },
+    { href: '#modelos', label: 'Modelos', sub: 'Prendas destacadas' },
+    { href: '#filosofia', label: 'Filosofía', sub: 'Nuestra historia' },
+    { href: '#lookbook', label: 'Lookbook', sub: 'Editorial & looks' },
+    { href: '#contacto', label: 'Contacto', sub: 'Únete al movimiento' },
   ]
 
   return (
@@ -124,12 +124,26 @@ export default function Navbar() {
                     transition={{ delay: 0.1 + i * 0.07, duration: 0.4 }}
                   >
                     <a href={link.href} onClick={() => setMenuOpen(false)}>
-                      <span className="nav-mobile-num">0{i + 1}</span>
-                      {link.label}
+                      <div className="nav-mobile-link-text">
+                        <span className="nav-mobile-label">{link.label}</span>
+                        <span className="nav-mobile-sub">{link.sub}</span>
+                      </div>
+                      <span className="nav-mobile-arrow">→</span>
                     </a>
                   </motion.li>
                 ))}
               </ul>
+
+              <motion.div
+                className="nav-mobile-social"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5, duration: 0.4 }}
+              >
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="TikTok">TK</a>
+                <a href="#" aria-label="WhatsApp">WA</a>
+              </motion.div>
 
               <div className="nav-mobile-footer">
                 <button className="theme-toggle" onClick={toggleTheme} aria-label="Cambiar tema">

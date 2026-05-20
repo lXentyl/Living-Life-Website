@@ -43,6 +43,7 @@ export default function Collection() {
         <motion.a
           href="#"
           className="btn-primary"
+          onClick={(e) => e.preventDefault()}
           initial={{ opacity: 0 }}
           animate={inView ? { opacity: 1 } : {}}
           transition={{ delay: 0.3, duration: 0.6 }}

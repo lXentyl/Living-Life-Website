@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
-import { useMemo } from 'react'
-import HeroVideo from './HeroVideo'
+import { useMemo, useState, useEffect } from 'react'
+import HeroSlideshow from './HeroSlideshow'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -11,8 +11,15 @@ const fadeUp = {
 }
 
 export default function Hero() {
+  const [particleCount, setParticleCount] = useState(30)
+
+  useEffect(() => {
+    const isMobile = window.matchMedia('(max-width: 768px)').matches
+    setParticleCount(isMobile ? 10 : 30)
+  }, [])
+
   const particles = useMemo(() => {
-    return Array.from({ length: 30 }, (_, i) => ({
+    return Array.from({ length: particleCount }, (_, i) => ({
       id: i,
       left: Math.random() * 100 + '%',
       top: Math.random() * 100 + '%',
@@ -20,11 +27,11 @@ export default function Hero() {
       duration: 6 + Math.random() * 6 + 's',
       size: 1 + Math.random() * 2 + 'px'
     }))
-  }, [])
+  }, [particleCount])
 
   return (
     <section className="hero">
-      <HeroVideo />
+      <HeroSlideshow />
 
       <div className="hero-particles">
         {particles.map(p => (
@@ -42,7 +49,7 @@ export default function Hero() {
       </div>
 
       {/* Giant animated brand name */}
-      <div className="hero-brand">
+      <h1 className="hero-brand">
         <motion.div
           className="hero-brand-line"
           initial={{ opacity: 0, y: 80, skewY: 4 }}
@@ -87,7 +94,7 @@ export default function Hero() {
           animate={{ scaleX: 1 }}
           transition={{ delay: 1.4, duration: 1, ease: [0.25, 0.46, 0.45, 0.94] }}
         />
-      </div>
+      </h1>
 
       <motion.p
         className="hero-eyebrow"

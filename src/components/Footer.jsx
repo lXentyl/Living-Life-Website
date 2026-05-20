@@ -29,25 +29,25 @@ export default function Footer() {
           <div className="footer-col">
             <h4>Social</h4>
             <ul>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">TikTok</a></li>
-              <li><a href="#">WhatsApp</a></li>
-              <li><a href="#">Twitter / X</a></li>
+              <li><a href="#" onClick={(e) => e.preventDefault()}>Instagram</a></li>
+              <li><a href="#" onClick={(e) => e.preventDefault()}>TikTok</a></li>
+              <li><a href="#" onClick={(e) => e.preventDefault()}>WhatsApp</a></li>
+              <li><a href="#" onClick={(e) => e.preventDefault()}>Twitter / X</a></li>
             </ul>
           </div>
           <div className="footer-col">
             <h4>Legal</h4>
             <ul>
-              <li><a href="#">Términos</a></li>
-              <li><a href="#">Privacidad</a></li>
-              <li><a href="#">Envíos</a></li>
-              <li><a href="#">Devoluciones</a></li>
+              <li><a href="#" onClick={(e) => e.preventDefault()}>Términos</a></li>
+              <li><a href="#" onClick={(e) => e.preventDefault()}>Privacidad</a></li>
+              <li><a href="#" onClick={(e) => e.preventDefault()}>Envíos</a></li>
+              <li><a href="#" onClick={(e) => e.preventDefault()}>Devoluciones</a></li>
             </ul>
           </div>
         </div>
       </div>
       <div className="footer-bottom">
-        <p className="footer-copy">© 2025 Living Life. Todos los derechos reservados.</p>
+        <p className="footer-copy">© {new Date().getFullYear()} Living Life. Todos los derechos reservados.</p>
         <p className="footer-credit">Santo Domingo, República Dominicana</p>
       </div>
     </motion.footer>
